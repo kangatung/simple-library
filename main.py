@@ -24,13 +24,13 @@ def main_functions():
 	
 def data_list():
 	print("\n")
-	open_file = open("dataperpus.txt","r")
+	open_file = open("library.txt","r")
 	print(open_file.read())
 	open_file.close()
 	
 	
 def tambah_list():
-	tambah_file = open("dataperpus.txt","a")
+	tambah_file = open("library.txt","a")
 	input_tambah = input("Silahkan masukkan judul buku yang baru: ")
 	tambah_file.write(input_tambah)
 	tambah_file.write("\n")
@@ -39,7 +39,7 @@ def tambah_list():
 	
 	
 def delete_data():
-	delete_file = open("dataperpus.txt","r+")
+	delete_file = open("library.txt","r+")
 	list_number = int(input("Silahkan masukkan data yang ingin di hapus: "))
 	list_name = delete_file.readlines()
 	del list_name[list_number - 1]
@@ -48,13 +48,13 @@ def delete_data():
 	print(list_name2)
 	delete_file.close()
 	
-	delete_file = open("dataperpus.txt","w")
+	delete_file = open("library.txt","w")
 	delete_file.write(list_name2)
 	delete_file.close()
 	
 	
 def reset_data():
-	reset_file = open("dataperpus.txt","w")
+	reset_file = open("library.txt","w")
 	reset_file.write("")
 	reset_file.close()
 	
