@@ -3,5 +3,3 @@
 - This program can write new data and store to file name 'library.txt'<br>
 - Keep learning bro!!
 
-<h2>Installation</h2>
-pip install pytube
